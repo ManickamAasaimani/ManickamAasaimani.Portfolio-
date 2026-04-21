@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Manickam Aasaimani | Full Stack Developer · Java · Spring Boot · AI</title>
+  <meta name="description" content="Portfolio of Manickam Aasaimani — Full Stack Developer, Java & Spring Boot Engineer, AI-integrated solutions. Based in Thanjavur, Tamil Nadu." />
+  <meta name="keywords" content="Manickam Aasaimani, Full Stack Developer, Java, Spring Boot, React, Angular, Claude AI, Thanjavur" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════
+     NAVIGATION
+     Styled like VS Code's title bar with file tabs
+════════════════════════════════════════════════════════════ -->
+<header class="nav" id="topNav">
+
+  <!-- Logo -->
+  <a href="#home" class="nav-logo">
+    <div class="nav-logo-icon">MA</div>
+    Manickam<span style="color: var(--blue-light);">.dev</span>
+  </a>
+
+  <!-- Desktop nav tabs (look like VS Code file tabs) -->
+  <nav class="nav-tabs">
+    <a href="#about"     class="nav-tab"><span class="nav-tab-dot"></span>about.js</a>
+    <a href="#skills"    class="nav-tab"><span class="nav-tab-dot"></span>skills.json</a>
+    <a href="#projects"  class="nav-tab"><span class="nav-tab-dot"></span>projects.md</a>
+    <a href="#education" class="nav-tab"><span class="nav-tab-dot"></span>education.xml</a>
+    <a href="#resume"    class="nav-tab"><span class="nav-tab-dot"></span>resume.pdf</a>
+  </nav>
+
+  <!-- Social icons + CTA -->
+  <div style="display:flex; align-items:center; gap:0.5rem;">
+    <div class="nav-socials">
+      <a href="https://linkedin.com/in/manickam-a-007-" target="_blank" class="nav-social-btn" title="LinkedIn">💼</a>
+      <a href="https://github.com/ManickamAasaimani"    target="_blank" class="nav-social-btn" title="GitHub">🐙</a>
+      <a href="https://wa.me/919952496529"              target="_blank" class="nav-social-btn" title="WhatsApp">💬</a>
+      <a href="mailto:amanickam007@gmail.com"                           class="nav-social-btn" title="Email">✉️</a>
+    </div>
+    <a href="#resume" class="btn-primary" style="font-size:0.78rem; padding:0.45rem 1rem;">Resume →</a>
+    <!-- Hamburger for mobile -->
+    <button class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+</header>
+
+<!-- Mobile slide-down menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">about.js</a>
+  <a href="#skills">skills.json</a>
+  <a href="#projects">projects.md</a>
+  <a href="#education">education.xml</a>
+  <a href="#resume">resume.pdf</a>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     HERO SECTION
+     Background: 5 cycling coding photos
+     Content: Name, animated role, bio, social links
+════════════════════════════════════════════════════════════ -->
+<section id="home">
+
+  <!-- Photo background slides -->
+  <div class="hero-slides">
+    <div class="hero-slide active"></div> <!-- code editor dark -->
+    <div class="hero-slide"></div>        <!-- laptop coding -->
+    <div class="hero-slide"></div>        <!-- code on screen -->
+    <div class="hero-slide"></div>        <!-- dev workspace -->
+    <div class="hero-slide"></div>        <!-- neon tech setup -->
+  </div>
+
+  <!-- Slider navigation -->
+  <button class="slide-prev" id="slidePrev">&#8592;</button>
+  <button class="slide-next" id="slideNext">&#8594;</button>
+  <div class="slide-dots" id="slideDots">
+    <button class="slide-dot active"></button>
+    <button class="slide-dot"></button>
+    <button class="slide-dot"></button>
+    <button class="slide-dot"></button>
+    <button class="slide-dot"></button>
+  </div>
+
+  <!-- Main hero content -->
+  <div class="hero-inner">
+
+    <!-- Left: Text content -->
+    <div class="hero-left">
+      <div class="hero-tag">
+        <span class="hero-tag-dot"></span>
+        Open to Internships &amp; Junior Roles &nbsp;·&nbsp; Thanjavur, TN
+      </div>
+
+      <h1 class="hero-name">Manickam<br>Aasaimani</h1>
+
+      <!-- Typewriter animated role -->
+      <div class="hero-role-line">
+        <span id="typewriter"></span><span class="cursor-blink"></span>
+      </div>
+
+      <p class="hero-bio">
+        Self-driven Full Stack Developer with 6+ months of freelance experience delivering
+        production-grade web applications for real clients. Java, Spring Boot, React, Angular —
+        end-to-end. Actively integrating Claude and OpenAI APIs to build smarter, AI-powered apps.
+      </p>
+
+      <!-- Action buttons -->
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">View My Work →</a>
+        <a href="https://drive.google.com/file/d/1aukNzwjdC2hbp_2iSbvXniJ8SCtRfZD9/view?usp=sharing"
+           target="_blank" class="btn-outline">⬇ Download Resume</a>
+      </div>
+
+      <!-- Social connect row -->
+      <div class="hero-connect">
+        <span class="hero-connect-label">Connect:</span>
+        <a href="https://linkedin.com/in/manickam-a-007-" target="_blank" class="btn-ghost">💼 LinkedIn</a>
+        <a href="https://github.com/ManickamAasaimani"    target="_blank" class="btn-ghost">🐙 GitHub</a>
+        <a href="https://wa.me/919952496529"              target="_blank" class="btn-ghost">💬 WhatsApp</a>
+        <a href="mailto:amanickam007@gmail.com"                           class="btn-ghost">✉️ Email</a>
+      </div>
+    </div>
+
+    <!-- Right: Profile card -->
+    <div class="profile-card">
+      <div class="card-tab">
+        <span class="card-tab-dot"></span>
+        ManickamAasaimani.profile
+      </div>
+
+      <div class="avatar">MA</div>
+      <div class="card-name">Manickam Aasaimani</div>
+      <div class="card-role">Full Stack · Java · AI Developer</div>
+
+      <!-- Stats -->
+      <div class="card-stats">
+        <div class="stat">
+          <div class="stat-num" data-target="4" data-suffix="+">4+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-target="6" data-suffix="mo">6mo</div>
+          <div class="stat-label">Freelance</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-target="10" data-suffix="+">10+</div>
+          <div class="stat-label">Tech Skills</div>
+        </div>
+      </div>
+
+      <!-- Tags -->
+      <div class="card-tags">
+        <span class="card-tag">Java</span>
+        <span class="card-tag">Spring Boot</span>
+        <span class="card-tag">React</span>
+        <span class="card-tag">Angular</span>
+        <span class="card-tag">MySQL</span>
+        <span class="card-tag">Claude AI</span>
+      </div>
+
+      <!-- Status -->
+      <div class="card-status">
+        <div class="status-dot"></div>
+        <div class="status-text">Open to opportunities · 2026</div>
+      </div>
+    </div>
+
+  </div><!-- /hero-inner -->
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     ABOUT SECTION
+════════════════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="section">
+    <div class="about-grid">
+
+      <!-- Left: Bio text -->
+      <div class="reveal">
+        <span class="badge">about-me</span>
+        <h2 class="section-title">
+          Building software,<br>
+          <span class="kw-yellow">one commit</span>
+          <span class="kw-blue"> at a time.</span>
+        </h2>
+
+        <p class="section-sub" style="margin-top: 0.9rem;">
+          I'm Manickam Aasaimani, a self-driven Full Stack Developer based in Thanjavur, Tamil Nadu.
+          I've spent the past 6 months delivering production-grade web applications as a freelancer —
+          working directly with real clients from requirements gathering all the way to CI/CD
+          deployment and post-launch maintenance.
+        </p>
+        <p class="section-sub" style="margin-top: 0.75rem;">
+          My stack: Java + Spring Boot on the backend, React or Angular on the frontend,
+          deployed on Vercel and Railway. What sets me apart — I actively integrate AI
+          (Claude, OpenAI) into real applications, and my commerce background gives me a
+          sharp understanding of both the technical and business side of every problem.
+        </p>
+
+        <!-- Contact chips -->
+        <div class="contact-row">
+          <a href="tel:+919952496529"                      class="contact-chip">📞 +91 9952496529</a>
+          <a href="mailto:amanickam007@gmail.com"          class="contact-chip">✉️ amanickam007@gmail.com</a>
+          <a href="https://wa.me/919952496529" target="_blank" class="contact-chip">💬 WhatsApp</a>
+          <a href="https://linkedin.com/in/manickam-a-007-" target="_blank" class="contact-chip">💼 LinkedIn</a>
+          <a href="https://github.com/ManickamAasaimani"    target="_blank" class="contact-chip">🐙 GitHub</a>
+          <a href="#" class="contact-chip">📍 Thanjavur, TN · Remote-Ready</a>
+        </div>
+      </div>
+
+      <!-- Right: Code block -->
+      <div class="code-block reveal">
+        <div class="code-topbar">
+          <span class="tb-dot tb-red"></span>
+          <span class="tb-dot tb-yellow"></span>
+          <span class="tb-dot tb-green"></span>
+          <span class="tb-filename">ManickamAasaimani.java</span>
+        </div>
+        <div class="code-content">
+<span class="syn-comment">// ── Developer Profile ────────────────────</span>
+<span class="syn-keyword">public class</span> <span class="syn-class">ManickamAasaimani</span>
+    <span class="syn-keyword">implements</span> <span class="syn-class">Developer</span> <span class="syn-punct">{</span>
+
+  <span class="syn-keyword">private</span> String <span class="syn-prop">name</span>     = <span class="syn-string">"Manickam Aasaimani"</span><span class="syn-punct">;</span>
+  <span class="syn-keyword">private</span> String <span class="syn-prop">role</span>     = <span class="syn-string">"Full Stack Developer"</span><span class="syn-punct">;</span>
+  <span class="syn-keyword">private</span> String <span class="syn-prop">location</span> = <span class="syn-string">"Thanjavur, TN 🇮🇳"</span><span class="syn-punct">;</span>
+  <span class="syn-keyword">private</span> String <span class="syn-prop">email</span>    = <span class="syn-string">"amanickam007@gmail.com"</span><span class="syn-punct">;</span>
+  <span class="syn-keyword">private</span> String <span class="syn-prop">status</span>   = <span class="syn-string">"Open to opportunities"</span><span class="syn-punct">;</span>
+
+  <span class="syn-keyword">private</span> List&lt;String&gt; <span class="syn-prop">stack</span> = List.of<span class="syn-punct">(</span>
+    <span class="syn-string">"Java"</span><span class="syn-punct">,</span> <span class="syn-string">"Spring Boot"</span><span class="syn-punct">,</span>
+    <span class="syn-string">"React"</span><span class="syn-punct">,</span> <span class="syn-string">"Angular"</span><span class="syn-punct">,</span>
+    <span class="syn-string">"MySQL"</span><span class="syn-punct">,</span> <span class="syn-string">"Claude AI"</span>
+  <span class="syn-punct">);</span>
+
+  <span class="syn-keyword">public</span> String <span class="syn-fn">getPassion</span><span class="syn-punct">() {</span>
+    <span class="syn-keyword">return</span> <span class="syn-string">"AI-powered, production-ready apps"</span><span class="syn-punct">;</span>
+  <span class="syn-punct">}</span>
+
+  <span class="syn-keyword">public boolean</span> <span class="syn-fn">isAvailable</span><span class="syn-punct">() {</span>
+    <span class="syn-bool">return true</span><span class="syn-punct">;</span> <span class="syn-comment">// always! 🚀</span>
+  <span class="syn-punct">}</span>
+<span class="syn-punct">}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SKILLS SECTION
+════════════════════════════════════════════════════════════ -->
+<section id="skills">
+  <div class="section">
+
+    <div class="reveal" style="text-align:center; max-width:520px; margin:0 auto 1rem;">
+      <span class="badge">tech-skills</span>
+      <h2 class="section-title">My <span class="kw-yellow">technical</span> toolkit.</h2>
+      <p class="section-sub" style="margin:0 auto;">
+        Built through real freelance projects and production deployments — not just tutorials.
+      </p>
+    </div>
+
+    <!-- 3-column skill cards -->
+    <div class="skills-grid">
+
+      <!-- Backend -->
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <span class="skill-card-icon">☕</span>
+          <h3>Backend Development</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>Java (Core + Advanced)</span><span>85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="85%"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>Spring Boot</span><span>82%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="82%"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>REST API Design</span><span>85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="85%"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>JSP &amp; Servlets</span><span>75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="75%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <span class="skill-card-icon">⚛️</span>
+          <h3>Frontend Development</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>React.js</span><span>80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="80%"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>Angular</span><span>78%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="78%"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>HTML5 / CSS3</span><span>90%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="90%"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>JavaScript (ES6+)</span><span>82%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="82%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI & Deployment -->
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <span class="skill-card-icon">🤖</span>
+          <h3>AI &amp; Deployment</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>Claude API (Anthropic)</span><span>85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="85%"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>OpenAI API</span><span>80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="80%"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>Vercel &amp; Railway</span><span>88%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="88%"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-label"><span>n8n Automation</span><span>75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-w="75%"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Additional tools -->
+    <div class="tools-row reveal">
+      <div class="tools-label">Also comfortable with</div>
+      <div class="tools-tags">
+        <span class="tool-tag">MySQL</span>
+        <span class="tool-tag">Spring Data JPA</span>
+        <span class="tool-tag">Hibernate</span>
+        <span class="tool-tag">Git &amp; GitHub</span>
+        <span class="tool-tag">Postman</span>
+        <span class="tool-tag">VS Code</span>
+        <span class="tool-tag">CI/CD Pipelines</span>
+        <span class="tool-tag">JWT Auth</span>
+        <span class="tool-tag">IoC / Dependency Injection</span>
+        <span class="tool-tag">OOP Principles</span>
+        <span class="tool-tag">DSA</span>
+        <span class="tool-tag">AWS &amp; Azure (learning)</span>
+        <span class="tool-tag">Vertex AI (learning)</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     PROJECTS SECTION
+════════════════════════════════════════════════════════════ -->
+<section id="projects">
+  <div class="section">
+
+    <div class="projects-header">
+      <div class="reveal">
+        <span class="badge">my-projects</span>
+        <h2 class="section-title">Things I've <span class="kw-green">built.</span></h2>
+        <p class="section-sub">Real projects — live in production with real users.</p>
+      </div>
+      <a href="https://github.com/ManickamAasaimani" target="_blank" class="btn-outline reveal">
+        🐙 All Repos on GitHub
+      </a>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: AgreeConnect -->
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80');">
+          <div class="project-badges">
+            <span class="project-tech">Angular</span>
+            <span class="project-tech">Spring Boot</span>
+            <span class="project-tech">Claude AI</span>
+          </div>
+          <span class="badge-live live">🟢 Live</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">AgreeConnect</div>
+          <div class="project-stack">MySQL · Spring Boot · Angular · Claude API · Vercel · Railway</div>
+          <p class="project-desc">
+            Full stack platform for user interaction and workflow management.
+            Integrated Claude AI to enhance application intelligence and deliver a smarter UX.
+            Live in production — frontend on Vercel, backend on Railway.
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="project-link live-link">🔗 Live Demo</a>
+            <a href="https://github.com/ManickamAasaimani" target="_blank" class="project-link code-link">🐙 Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Trading Platform -->
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80');">
+          <div class="project-badges">
+            <span class="project-tech">React</span>
+            <span class="project-tech">Spring Boot</span>
+            <span class="project-tech">MySQL</span>
+          </div>
+          <span class="badge-live wip">⏳ In Progress</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Trading Platform</div>
+          <div class="project-stack">React · Spring Boot · MySQL · DSA · Vercel · Railway</div>
+          <p class="project-desc">
+            Full-featured trading platform with real-time data, order management, and portfolio tracking.
+            Backend uses DSA-optimized logic for high-performance data processing.
+            Targeting Vercel + Railway deployment.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/ManickamAasaimani" target="_blank" class="project-link code-link">🐙 Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Simple Chat AI -->
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80');">
+          <div class="project-badges">
+            <span class="project-tech">Claude API</span>
+            <span class="project-tech">n8n</span>
+            <span class="project-tech">Vercel</span>
+          </div>
+          <span class="badge-live live">🟢 Live</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Simple Chat AI</div>
+          <div class="project-stack">Claude API · n8n Automation · Vercel</div>
+          <p class="project-desc">
+            Conversational AI chat interface powered by the Claude API with a clean, responsive UI.
+            Workflow automated using n8n. Fully deployed live on Vercel.
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="project-link live-link">🔗 Live Demo</a>
+            <a href="https://github.com/ManickamAasaimani" target="_blank" class="project-link code-link">🐙 Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: IT Company Website -->
+      <div class="project-card reveal">
+        <div class="project-img" style="background-image: url('https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80');">
+          <div class="project-badges">
+            <span class="project-tech">HTML5</span>
+            <span class="project-tech">CSS3</span>
+            <span class="project-tech">Vanilla JS</span>
+          </div>
+          <span class="badge-live live">🟢 Live</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">IT Company Website</div>
+          <div class="project-stack">HTML5 · CSS3 · Vanilla JS · Vercel</div>
+          <p class="project-desc">
+            Clean, responsive corporate website built for a real local IT client.
+            No frameworks — lightweight, well-structured vanilla code.
+            Handled everything from requirements to live Vercel deployment.
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="project-link live-link">🔗 Live Demo</a>
+            <a href="https://github.com/ManickamAasaimani" target="_blank" class="project-link code-link">🐙 Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     EDUCATION SECTION
+════════════════════════════════════════════════════════════ -->
+<section id="education">
+  <div class="section">
+
+    <div class="reveal" style="margin-bottom: 2.5rem;">
+      <span class="badge">education-certifications</span>
+      <h2 class="section-title">Academic <span class="kw-string">background.</span></h2>
+      <p class="section-sub">
+        Commerce + Computer Applications — a unique foundation for building business-aware software.
+      </p>
+    </div>
+
+    <div class="edu-timeline">
+
+      <!-- M.Com -->
+      <div class="edu-item reveal">
+        <div class="edu-top">
+          <div class="edu-degree">Master of Commerce (M.Com)</div>
+          <div class="edu-year">2024 – 2026</div>
+        </div>
+        <div class="edu-school">📚 Adaikalamatha College, Vallam · Thanjavur, Tamil Nadu</div>
+        <p class="edu-desc">
+          Advanced commerce studies combined with independent software development. Deepens analytical
+          thinking and business understanding applied directly to software engineering decisions.
+        </p>
+      </div>
+
+      <!-- B.Com CA -->
+      <div class="edu-item reveal">
+        <div class="edu-top">
+          <div class="edu-degree">B.Com — Computer Applications (B.Com CA)</div>
+          <div class="edu-year">2021 – 2024</div>
+        </div>
+        <div class="edu-school">🏫 Annai Velankanni Arts and Science College · Thanjavur, Tamil Nadu</div>
+        <p class="edu-desc">
+          Strong foundation in computer applications, programming fundamentals, and business logic.
+          The commerce angle sharpens understanding of how software solves real business problems.
+        </p>
+      </div>
+
+      <!-- Freelance -->
+      <div class="edu-item reveal">
+        <div class="edu-top">
+          <div class="edu-degree">Freelance Full Stack Developer</div>
+          <div class="edu-year">Jan 2026 – Present</div>
+        </div>
+        <div class="edu-school">💼 Self-Employed · Thanjavur, Tamil Nadu</div>
+        <p class="edu-desc">
+          End-to-end web applications for real clients — college final-year projects, business websites,
+          and AI-integrated tools. Managed CI/CD, production deployments, and client communication independently.
+        </p>
+      </div>
+
+      <!-- Java Cert -->
+      <div class="edu-item reveal">
+        <div class="edu-top">
+          <div class="edu-degree">Java Programming Certification</div>
+          <div class="edu-year">Certified</div>
+        </div>
+        <div class="edu-school">🏅 Java Certification</div>
+        <p class="edu-desc">
+          Formal certification validating Java programming skills — core to backend development
+          with Spring Boot and enterprise application design.
+        </p>
+      </div>
+
+      <!-- Banking Cert -->
+      <div class="edu-item reveal">
+        <div class="edu-top">
+          <div class="edu-degree">Banking Course Certification</div>
+          <div class="edu-year">Certified</div>
+        </div>
+        <div class="edu-school">🏦 TimesPro</div>
+        <p class="edu-desc">
+          Banking and financial domain knowledge that directly informs the trading platform project
+          and understanding of fintech application requirements.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     RESUME SECTION
+     Left: Control panel (edit, download buttons)
+     Right: Resume document (editable in browser)
+════════════════════════════════════════════════════════════ -->
+<section id="resume">
+  <div class="section">
+
+    <div class="reveal" style="margin-bottom: 2.5rem;">
+      <span class="badge">resume</span>
+      <h2 class="section-title">My <span class="kw-blue">résumé.</span></h2>
+      <p class="section-sub">
+        Click "Edit Resume" to update any field live in the browser, then download.
+        Or open the PDF directly from Google Drive.
+      </p>
+    </div>
+
+    <div class="resume-wrap">
+
+      <!-- Control panel -->
+      <div class="resume-panel reveal">
+        <h3>// resume.pdf</h3>
+        <p>View, edit, and download your professional resume. All text fields are editable.</p>
+
+        <div class="resume-btns">
+          <!-- Google Drive direct link -->
+          <a href="https://drive.google.com/file/d/1aukNzwjdC2hbp_2iSbvXniJ8SCtRfZD9/view?usp=sharing"
+             target="_blank" class="resume-btn btn-dl">
+            ☁️ Open PDF (Google Drive)
+          </a>
+          <!-- Browser print to PDF -->
+          <button class="resume-btn btn-sec" id="btnDownPDF">
+            🖨️ Print / Save as PDF
+          </button>
+          <!-- Download HTML copy -->
+          <button class="resume-btn btn-sec" id="btnDownHTML">
+            💾 Download as HTML
+          </button>
+          <!-- Toggle edit mode -->
+          <button class="resume-btn btn-sec" id="btnEdit">
+            ✏️ Edit Resume
+          </button>
+        </div>
+
+        <div class="resume-note">
+          <strong>// How to edit</strong>
+          Click "Edit Resume" above, then click any text in the resume to update it.
+          When done, click "✓ Done Editing" then save.
+        </div>
+      </div>
+
+      <!-- Resume document -->
+      <div class="resume-doc reveal" id="resumeDoc">
+
+        <!-- Header / Hero -->
+        <div class="resume-header">
+          <div class="resume-name" contenteditable="false">Manickam Aasaimani</div>
+          <div class="resume-role" contenteditable="false">Full Stack Developer · Java &amp; Spring Boot · AI-Integrated Solutions</div>
+          <div class="resume-contacts">
+            <span class="resume-contact">📞 <span contenteditable="false">+91 9952496529</span></span>
+            <span class="resume-contact">✉️ <span contenteditable="false">amanickam007@gmail.com</span></span>
+            <span class="resume-contact">💼 <span contenteditable="false">linkedin.com/in/manickam-a-007-</span></span>
+            <span class="resume-contact">🐙 <span contenteditable="false">github.com/ManickamAasaimani</span></span>
+            <span class="resume-contact">📍 <span contenteditable="false">Thanjavur, Tamil Nadu, India</span></span>
+          </div>
+        </div>
+
+        <div class="resume-body">
+
+          <!-- Professional Summary -->
+          <div class="resume-section">
+            <div class="resume-section-title">Professional Summary</div>
+            <p class="resume-item-desc" contenteditable="false" style="list-style:none; padding:0;">
+              Self-driven Full Stack Developer with 6+ months of freelance experience delivering production-grade
+              web applications for real clients. Proficient in Java, Spring Boot, and modern frontend frameworks
+              (React, Angular) with hands-on deployment on Vercel and Railway. Actively integrates AI tools
+              (Claude, OpenAI) to accelerate development and build intelligent solutions. Open to internships
+              and junior Full Stack Developer roles.
+            </p>
+          </div>
+
+          <!-- Experience -->
+          <div class="resume-section">
+            <div class="resume-section-title">Experience</div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <div class="resume-item-title" contenteditable="false">Freelance Full Stack Developer</div>
+                <div class="resume-item-date" contenteditable="false">Jan 2026 – Present</div>
+              </div>
+              <div class="resume-item-sub" contenteditable="false">Self-Employed · Thanjavur, Tamil Nadu</div>
+              <ul class="resume-item-desc" contenteditable="false">
+                <li>Designed, developed, and delivered complete college final-year projects end-to-end with documentation</li>
+                <li>Built and sold responsive static websites for local Thanjavur businesses, handling requirements to Vercel deployment</li>
+                <li>Managed live production environments on Vercel (frontend) and Railway (backend), including CI/CD pipelines</li>
+                <li>Collaborated directly with clients to iterate on features, meet deadlines, and deliver polished products</li>
+                <li>Leveraged Claude and OpenAI APIs to integrate AI capabilities into client projects, improving UX and intelligence</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Key Projects -->
+          <div class="resume-section">
+            <div class="resume-section-title">Key Projects</div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <div class="resume-item-title" contenteditable="false">AgreeConnect — Full Stack Web Application</div>
+                <div class="resume-item-date" contenteditable="false">Angular · Spring Boot · MySQL · Claude AI</div>
+              </div>
+              <ul class="resume-item-desc" contenteditable="false">
+                <li>Full stack platform for user interaction and workflow management; live in production</li>
+                <li>Integrated Claude AI to enhance application intelligence and deliver a smarter user experience</li>
+                <li>Deployed: Vercel (frontend) + Railway (backend)</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <div class="resume-item-title" contenteditable="false">Trading Platform (In Progress)</div>
+                <div class="resume-item-date" contenteditable="false">React · Spring Boot · MySQL</div>
+              </div>
+              <ul class="resume-item-desc" contenteditable="false">
+                <li>Full-featured trading platform with real-time data, order management, and portfolio tracking</li>
+                <li>Backend uses DSA-optimized logic for high-performance data processing</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <div class="resume-item-title" contenteditable="false">Simple Chat AI</div>
+                <div class="resume-item-date" contenteditable="false">Claude API · n8n · Vercel</div>
+              </div>
+              <ul class="resume-item-desc" contenteditable="false">
+                <li>Conversational AI interface powered by Claude API with a clean, responsive UI</li>
+                <li>Automated workflow using n8n; deployed live on Vercel</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <div class="resume-item-title" contenteditable="false">IT Company Website (Live)</div>
+                <div class="resume-item-date" contenteditable="false">HTML5 · CSS3 · Vanilla JS</div>
+              </div>
+              <ul class="resume-item-desc" contenteditable="false">
+                <li>Responsive corporate website for real local IT client — no frameworks, clean vanilla code</li>
+                <li>Live on Vercel</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Education -->
+          <div class="resume-section">
+            <div class="resume-section-title">Education</div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <div class="resume-item-title" contenteditable="false">Master of Commerce (M.Com)</div>
+                <div class="resume-item-date" contenteditable="false">2024 – 2026</div>
+              </div>
+              <div class="resume-item-sub" contenteditable="false">Adaikalamatha College, Vallam · Thanjavur, Tamil Nadu</div>
+            </div>
+
+            <div class="resume-item">
+              <div class="resume-item-header">
+                <div class="resume-item-title" contenteditable="false">B.Com — Computer Applications (B.Com CA)</div>
+                <div class="resume-item-date" contenteditable="false">2021 – 2024</div>
+              </div>
+              <div class="resume-item-sub" contenteditable="false">Annai Velankanni Arts and Science College · Thanjavur, Tamil Nadu</div>
+            </div>
+
+          </div>
+
+          <!-- Certifications -->
+          <div class="resume-section">
+            <div class="resume-section-title">Certifications</div>
+            <div class="resume-item">
+              <div class="resume-item-title" contenteditable="false">Java Programming Certification</div>
+            </div>
+            <div class="resume-item">
+              <div class="resume-item-title" contenteditable="false">Banking Course Certification · TimesPro</div>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="resume-section">
+            <div class="resume-section-title">Technical Skills</div>
+            <div class="resume-skills-grid">
+              <span class="resume-skill" contenteditable="false">Java</span>
+              <span class="resume-skill" contenteditable="false">Spring Boot</span>
+              <span class="resume-skill" contenteditable="false">Spring MVC</span>
+              <span class="resume-skill" contenteditable="false">React.js</span>
+              <span class="resume-skill" contenteditable="false">Angular</span>
+              <span class="resume-skill" contenteditable="false">REST API</span>
+              <span class="resume-skill" contenteditable="false">MySQL</span>
+              <span class="resume-skill" contenteditable="false">Spring Data JPA</span>
+              <span class="resume-skill" contenteditable="false">Hibernate</span>
+              <span class="resume-skill" contenteditable="false">JavaScript (ES6+)</span>
+              <span class="resume-skill" contenteditable="false">HTML5 / CSS3</span>
+              <span class="resume-skill" contenteditable="false">Claude API</span>
+              <span class="resume-skill" contenteditable="false">OpenAI API</span>
+              <span class="resume-skill" contenteditable="false">n8n</span>
+              <span class="resume-skill" contenteditable="false">Git &amp; GitHub</span>
+              <span class="resume-skill" contenteditable="false">Vercel</span>
+              <span class="resume-skill" contenteditable="false">Railway</span>
+              <span class="resume-skill" contenteditable="false">CI/CD</span>
+              <span class="resume-skill" contenteditable="false">Postman</span>
+              <span class="resume-skill" contenteditable="false">IoC / DI</span>
+              <span class="resume-skill" contenteditable="false">OOP</span>
+              <span class="resume-skill" contenteditable="false">DSA</span>
+            </div>
+          </div>
+
+        </div><!-- /resume-body -->
+      </div><!-- /resume-doc -->
+
+    </div><!-- /resume-wrap -->
+  </div>
+</section>
+
+<!-- Edit mode floating indicator -->
+<div class="edit-indicator" id="editIndicator">
+  ✏️ Edit mode ON — click any text to edit
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     CONTACT CTA SECTION
+════════════════════════════════════════════════════════════ -->
+<div class="cta-section">
+  <h2>Let's <span style="color: var(--blue-light);">work together.</span></h2>
+  <p>
+    I'm actively looking for internships and junior Full Stack Developer roles.
+    If you're hiring or want to collaborate — let's talk.
+  </p>
+
+  <div class="cta-buttons">
+    <a href="mailto:amanickam007@gmail.com" class="btn-primary">✉️ Send Me an Email</a>
+    <a href="https://wa.me/919952496529" target="_blank" class="btn-outline">💬 WhatsApp Me</a>
+  </div>
+
+  <div class="social-grid">
+    <a href="https://linkedin.com/in/manickam-a-007-" target="_blank" class="social-btn">💼 LinkedIn</a>
+    <a href="https://github.com/ManickamAasaimani"    target="_blank" class="social-btn">🐙 GitHub</a>
+    <a href="https://wa.me/919952496529"              target="_blank" class="social-btn">💬 WhatsApp</a>
+    <a href="mailto:amanickam007@gmail.com"                           class="social-btn">✉️ Email</a>
+    <a href="tel:+919952496529"                                       class="social-btn">📞 +91 9952496529</a>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <div class="nav-logo-icon" style="width:22px;height:22px;font-size:0.6rem;">MA</div>
+      Manickam<span style="color: var(--blue-light);">.dev</span>
+    </div>
+    <div class="footer-links">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#resume">resume</a>
+    </div>
+    <div class="footer-copy">© 2026 Manickam Aasaimani · Built with ❤️ and Java</div>
+  </div>
+</footer>
+
+
+<!-- Load JavaScript last, after all HTML is parsed -->
+<script src="script.js"></script>
+
+</body>
+</html>
